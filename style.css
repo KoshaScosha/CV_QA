@@ -1,0 +1,119 @@
+@font-face {
+    font-family: BeVietnamPro;
+     src: url("assets/fonts/BeVietnamPro-Regular.ttf");
+   }
+   @font-face {
+    font-family: now;
+     src: url("assets/fonts/now.regular.otf");
+   }
+body {
+    font-family: now;
+    background-color: #262729;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+}
+.container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 10px 0px;
+    display: flex;
+}
+.left-block{
+    background-color: #e1e3fa;
+    flex: 2;
+    padding: 20px 0px;
+}
+.right-block{
+    background-color: #fff;
+    flex: 3;
+    flex-direction: column;
+    padding: 20px 0px; 
+}
+.main-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.photo {
+    width: 150px; 
+    height: 200px;
+}
+.name {
+    font-family:BeVietnamPro;
+}
+.section-container {
+    margin-top: 10px;
+}
+.title-container {
+    display: flex;
+    justify-content: center; 
+    width: 100%;
+    height: 50px;
+    background-color: #b9d8fa
+}
+.section-container:nth-of-type(3) .title-container {
+    background-color: #d0b0da;
+}
+.section-content, ul {
+    margin-left: 20px;
+    padding-inline-start: 0px;
+    padding-right: 5px;
+}
+.title-text {
+    margin: 10px;
+}
+.link {
+    color: #424ef1e4;
+    text-decoration: solid;
+}
+li {
+    margin-bottom: 7px;
+    list-style-type: disc;
+}
+.about-me {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.change-marker-in-li {
+    list-style: none;   
+}
+.change-marker-in-li > li::marker {
+    content: "\2B24";
+}
+.change-marker-in-li.marker-blue > li::marker {
+    color: #b9d8fa;
+}
+.change-marker-in-li.marker-pink > li::marker {
+    color: #d0b0da;
+}
+.change-marker-in-li > li {
+    padding-left: 10px;
+    margin-top: 12px;
+}
+.job-logo {
+    width: 40px; 
+    height: 40px;
+    float: left;
+    padding-right: 6px;
+}
+.job-logo-position {
+    position: relative;
+    right: 35px;
+}
+.job-title, .education-title {
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 7px;
+}
+.job-place, .education-place {
+    font-size: 18px;
+}
+.job-period, .education-period {
+    font-size: 15px;
+    margin-bottom: 7px;
+}
+.education-speciality {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
